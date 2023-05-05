@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria s.l. contacto preferente</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <class="logo"><img src="fotos/logo.jpeg"></img></class>
+        <h1>Tu veterinaria S.L.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="quien.html">Quienes somos</a>
+                </li>
+                <li><a href="servicios.html">Servicios</a>
+                </li>
+                <li><a href="Contacto.html">Contacto</a>
+                </li>
+                <li><a href="legales.html">Paginas legales</a>
+                </li>
+                <li><a href="tienda.html">Tienda</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- formulario de contacto en html y css -->
+
+<div class="contact_form">
+
+    <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+        <form action="submeter-formulario.php" method="post">
+
+
+            <p>
+                <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                    placeholder="Escribe tu nombre">
+            </p>
+
+            <p>
+                <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                    placeholder="Escribe tu Email">
+            </p>
+
+            <p>
+                <label for="telefone" class="colocar_telefono">Teléfono
+                </label>
+                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </p>
+
+            <p>
+                <label for="website" class="colocar_website">Sitio web
+                </label>
+                <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+            </p>
+
+            <p>
+                <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                    placeholder="Escribe un asunto">
+            </p>
+
+            <p>
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                    placeholder="Deja aquí tu comentario..."></textarea>
+            </p>
+
+            <button type="submit" name="enviar_formulario" id="enviar">
+                <p>Enviar</p>
+            </button>
+
+            <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+
+        </form>
+    </div>
+</div>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Puede contactar con nosotros de las siguientes maneras</h2>
+            <p class="telefono">Telefono: 666 666 666</p>
+            <p>Correo: tuveterinaria@veterinario.com</p>
+            <p>Direccion: Parque de los Pueblos de America, 18600 Motril, Granada.</p>
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                <script>(function () {
+                        var setting = { "height": 557, "width": 435, "zoom": 16, "queryString": "Motril Granada, Motril, España", "place_id": "ChIJC8QO4LyQcQ0ROAZHYqJQekM", "satellite": true, "centerCoord": [36.74279819253666, -3.5171988341442284], "cid": "0x437a50a262470638", "lang": "es", "cityUrl": "/spain/motril-8625", "cityAnchorText": "Mapa de Motril, Andalucía, España", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "891777" };
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=891777';
+                        s.async = true;
+                        s.onload = function (e) {
+                            window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementsByTagName('script')[0];
+                        to.parentNode.insertBefore(s, to);
+                    })();</script><a href="https://1map.com/es/map-embed">1 Map</a>
+            </div>
+        </div>
+    </section>
+    <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/34665584327?text=Hola!%20Estoy%20interesado%20en%20su%20servicio'">
+    
+
+
+</body>
+
+<footer>
+    <p>Todos los derechos reservados. tu Veterinaria S.L. &copy; 2018</p>
+</footer>
+
+
+</html>
